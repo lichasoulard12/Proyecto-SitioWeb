@@ -30,9 +30,13 @@ body{
 
 /* -- HEADER -- */
 header{
-    background-color: $color-principal1;
     margin: 0;
-    div{
+
+    /* -- TÍTULO -- */
+    .header-div{
+        background-color: $color-principal1;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
         display: flex;
         align-items: center;
         a img{
@@ -50,6 +54,8 @@ header{
 
     /* -- MENU NAV -- */
     nav{
+        border-radius: 100px;
+        border: .3px solid $color-secundario;
         .navbar-toggler{
             background-color: $color-secundario;
         }
@@ -87,6 +93,9 @@ main{
     hr{
         color: white;
     }
+    b{
+        color: rgb(117, 211, 215);
+    }
 }
 
 /* -- FOOTER -- */
@@ -109,10 +118,15 @@ main{
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
     }
+    h6{
+        color: $color-secundario;
+    }
+    /* -- ÍCONOS FOOTER -- */
     .footer-icons{
         display: flex;
         width: fit-content;
         a{
+            z-index: 10;
             padding: 0.5rem;
             transition: transform 0.3s ease;
         }

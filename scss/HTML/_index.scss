@@ -1,25 +1,26 @@
 /* -- MAIN (INDEX) -- */
 .index-main{
     .intro-img{
+        margin: .5rem;
         @extend %flex;
         img{
             @extend %box-shadow;
             border-radius: 50%;
         }
     }
-    .introduccion, .introduccion-dos{
-        p{
-            margin: 0;
-            height: fit-content;
-        }
+    .index-seccion-uno{
+        margin: 1rem;
     }
-    .introduccion-dos{
-        padding: 0;
-        .div-uno{
-            margin: 0.1rem;
-            padding: 0;
-            display: flex;
-            .div-uno-imagen{
+
+    /* -- SECCION 2 -- */
+    .index-seccion-dos{
+        margin: 1rem;
+        /* -- SECCION 2.1 -- */ 
+        .seccion-dos-1{
+
+            /* -- DIVS -- */ 
+            .seccion2-1-img{
+                display: flex;
                 img{
                     @include wyh (auto, 300px);
                     @extend %box-shadow;
@@ -28,21 +29,35 @@
                 }
             }
         }
-        .div-dos{
-            display: flex;
-            padding: 0.1rem;
-            div{
-                p{
-                    margin-left: 0.5rem;
-                }
-            }
-            a{
+
+        /* -- SECCION 2.2 -- */
+        .seccion-dos-2{
+            .seccion2-2-img{
+                display: flex;
                 img{
-                    margin-right: 0.5rem;
                     @include wyh (450px, auto);
                     @extend %box-shadow;
                     border-radius: 30px;
+                    margin-right: 0.5rem;
                 }
+                
+            }
+            
+        }
+    }
+    .next-page{
+        position: relative;
+        left: 70em;
+        width: fit-content;
+        margin: 4px;
+        padding: 4px;
+        h5{
+            a{
+                color: white;
+            }
+            a:hover{
+                text-decoration: underline $color-secundario;
+                color: $color-secundario;
             }
         }
     }

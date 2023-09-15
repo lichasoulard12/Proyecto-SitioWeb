@@ -1,6 +1,6 @@
 //box-shadow
 %box-shadow{
-    box-shadow: 1px 2px 20px 0 $color-secundario;
+    box-shadow: 2px 2px 15px 0 $color-secundario;
 }
 //flex
 %flex{
@@ -28,8 +28,9 @@
 //párrafos
 %parrafo{
     color: white;
-    text-indent: 0.5rem;
+    text-indent: 0.6rem;
     text-shadow: 0 0 10px black;
-    background-color: rgba(0, 0, 0, 0.650);
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.750);
     margin-bottom: 0;
 }
