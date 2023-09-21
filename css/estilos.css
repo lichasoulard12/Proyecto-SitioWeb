@@ -5,10 +5,10 @@
   margin: 0;
   box-sizing: border-box; }
 
-.index-main .intro-img img, .index-main .index-seccion-dos .seccion-dos-1 .seccion2-1-img img, .index-main .index-seccion-dos .seccion-dos-2 .seccion2-2-img img, .universo-main .seccion-dos-universo a img, .carousel-inner .carousel-item img, .galeria-img div img {
+.index-main .intro-img img, .index-main .index-seccion-dos .seccion-dos-1 .seccion2-1-img img, .index-main .index-seccion-dos .seccion-dos-2 .seccion2-2-img img, .universo-main .universo-seccion-dos a img, .carousel-inner .carousel-item img, .galeria-img div img {
   box-shadow: 2px 2px 15px 0 #c5d9e7; }
 
-.index-main .intro-img, .universo-main .div-universo {
+.index-main .intro-img, .universo-main .universo-intro-img {
   display: flex;
   justify-content: center;
   padding: 0.5rem; }
@@ -191,7 +191,8 @@ main p {
 
 /* -- MAIN (INDEX) -- */
 .index-main {
-  /* -- SECCION 2 -- */ }
+  /* -- SECCION 2 -- */
+  /* -- BOTÓN NEXT PAGE -- */ }
   .index-main .intro-img {
     margin: .5rem; }
     .index-main .intro-img img {
@@ -230,29 +231,50 @@ main p {
       text-decoration: underline #c5d9e7;
       color: #c5d9e7; }
 
-/* MAIN (EL UNIVERSO) */
-.universo-main .click-img {
-  width: auto;
-  display: inline; }
-  .universo-main .click-img a {
-    font-style: italic;
-    text-decoration: none;
-    color: white; }
-  .universo-main .click-img a:hover {
-    text-decoration: dashed;
-    color: #c5d9e7; }
-
-.universo-main .div-universo img {
-  width: 750px;
-  height: auto; }
-
-.universo-main .seccion-dos-universo a {
-  display: flex;
-  justify-content: center; }
-  .universo-main .seccion-dos-universo a img {
+/* -- MAIN (EL UNIVERSO) -- */
+.universo-main {
+  /* -- IMG DE UNIVERSO -- */
+  /* -- PARRAFO INFERIOR IMG UNIVERSO -- */
+  /* -- BOTÓN PREVIOUS PAGE -- */
+  /* -- PREVIOUS & NEXT PAGE BUTTON -- */ }
+  .universo-main .universo-intro-img img {
+    width: 750px;
+    height: auto; }
+  .universo-main .click-img {
     width: auto;
-    height: 300px;
-    border-radius: 30px; }
+    display: inline; }
+    .universo-main .click-img a {
+      font-style: italic; }
+    .universo-main .click-img a:hover {
+      text-decoration: dashed;
+      color: #c5d9e7; }
+  .universo-main .universo-seccion-dos a {
+    display: flex;
+    justify-content: center; }
+    .universo-main .universo-seccion-dos a img {
+      width: auto;
+      height: 300px;
+      border-radius: 30px; }
+  .universo-main .previous-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px;
+    padding: 4px; }
+    .universo-main .previous-page h5 a {
+      color: white; }
+    .universo-main .previous-page h5 a:hover {
+      text-decoration: underline #c5d9e7;
+      color: #c5d9e7; }
+  .universo-main .previous-next-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px;
+    padding: 4px; }
+    .universo-main .previous-next-page h5 a {
+      color: white; }
+    .universo-main .previous-next-page h5 a:hover {
+      text-decoration: underline #c5d9e7;
+      color: #c5d9e7; }
 
 /* -- MAIN (GALERÍA) -- */
 .galeria-p {

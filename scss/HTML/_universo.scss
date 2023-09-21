@@ -1,25 +1,27 @@
-/* MAIN (EL UNIVERSO) */
+/* -- MAIN (EL UNIVERSO) -- */
 .universo-main{
+
+    /* -- IMG DE UNIVERSO -- */
+    .universo-intro-img{
+        @extend %flex;
+        img{
+            @include wyh (750px, auto);
+        }
+    }
+    /* -- PARRAFO INFERIOR IMG UNIVERSO -- */
     .click-img{
         width: auto;
         display: inline;
         a{
             font-style: italic;
-            text-decoration: none;
-            color: white;
         }
         a:hover{
             text-decoration: dashed;
             color: $color-secundario;
         }
     }
-    .div-universo{
-        @extend %flex;
-        img{
-            @include wyh (750px, auto);
-        }
-    }
-    .seccion-dos-universo{
+    
+    .universo-seccion-dos{
         a{
             display: flex;
             justify-content: center;
@@ -27,6 +29,40 @@
                 @include wyh (auto, 300px);
                 @extend %box-shadow;
                 border-radius: 30px;
+            }
+        }
+    }
+
+    /* -- BOTÓN PREVIOUS PAGE -- */
+    .previous-page{
+        display: flex;
+        justify-content: space-between;
+        margin: 4px;
+        padding: 4px;
+        h5{
+            a{
+                color: white;
+            }
+            a:hover{
+                text-decoration: underline $color-secundario;
+                color: $color-secundario;
+            }
+        }
+    }
+
+    /* -- PREVIOUS & NEXT PAGE BUTTON -- */
+    .previous-next-page{
+        display: flex;
+        justify-content: space-between;
+        margin: 4px;
+        padding: 4px;
+        h5{
+            a{
+                color: white;
+            }
+            a:hover{
+                text-decoration: underline $color-secundario;
+                color: $color-secundario;
             }
         }
     }
