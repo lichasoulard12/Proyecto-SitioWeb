@@ -32,38 +32,4 @@
             }
         }
     }
-
-    /* -- BOTÓN PREVIOUS PAGE -- */
-    .previous-page{
-        display: flex;
-        justify-content: space-between;
-        margin: 4px;
-        padding: 4px;
-        h5{
-            a{
-                color: white;
-            }
-            a:hover{
-                text-decoration: underline $color-secundario;
-                color: $color-secundario;
-            }
-        }
-    }
-
-    /* -- PREVIOUS & NEXT PAGE BUTTON -- */
-    .previous-next-page{
-        display: flex;
-        justify-content: space-between;
-        margin: 4px;
-        padding: 4px;
-        h5{
-            a{
-                color: white;
-            }
-            a:hover{
-                text-decoration: underline $color-secundario;
-                color: $color-secundario;
-            }
-        }
-    }
 }

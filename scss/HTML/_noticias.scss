@@ -1,6 +1,8 @@
 /* -- MAIN (NOTICIAS) -- */
 .noticias-main{
-    .noticias{
+
+    /* -- SECCIÓN DE NOTICIAS -- */
+    .noticias-seccion{
         h3{
             font-style: italic;
         }
@@ -8,18 +10,15 @@
             @include wyh (100%, auto);
             border-radius: 10px;
         }
-        p{
-            margin-top: 0.2rem;
-        }
         a{
-            margin-top: 0.2rem;
             color: white;
         }
         a:hover{
             font-style: italic;
         }
         
-        .div-news1, .div-news2{
+        /* -- FILAS DE LAS NOTICIAS -- */
+        .noticias-seccion-fila1, .noticias-seccion-fila2{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: auto;
@@ -41,9 +40,6 @@
             background-color: rgba(0, 0, 0, 0.650);
             li{
                 color: white;
-                a{
-                    color: white;
-                }
                 a:hover{
                     font-style: italic;
                     text-decoration: underline $color-secundario;

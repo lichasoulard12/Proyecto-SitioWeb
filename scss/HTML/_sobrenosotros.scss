@@ -1,11 +1,13 @@
 /* -- MAIN (SOBRENOSOTROS) -- */
 .sobrenosotros-main{
-    .info-uno, .info-dos{
+    .info-redes-sociales, .info-comentario{
         h3{
             text-decoration: underline;
         }
     }
-    .info-uno{
+
+    /* -- REDES SOCIALES -- */
+    .info-redes-sociales{
         ul{
             color: white;
             margin-bottom: 0;
@@ -25,7 +27,9 @@
             }
         }
     }
-    .info-dos{
+
+    /* -- CAJA DE COMENTARIOS -- */
+    .info-comentario{
         .formulario{
             display: flex;
             .comment-form{
@@ -40,6 +44,10 @@
                 }
                 textarea{
                     margin-bottom: 0.5rem;
+                    resize: none;
+                }
+                label{
+                    margin-top: 5px;
                 }
                 .boton-enviar{
                     background-color: $color-secundario;
@@ -55,6 +63,8 @@
             }
         }
     }
+
+    /* MAPA */
     .mapa{
         margin: 1rem;
         iframe{

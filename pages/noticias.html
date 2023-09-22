@@ -21,6 +21,7 @@
     <link rel="icon" href="../img/logo.ico">
 </head>
 <body>
+
     <!-- HEADER -->
     <header class="container-fluid no-padding">
         <div class="header-div">
@@ -30,7 +31,7 @@
             <h1> ASTRONOMÍA PARA TODOS </h1>
         </div>
 
-        <!-- MENU DE NAVEGACIÓN -->
+        <!-- NAV MENU -->
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,15 +60,17 @@
         </nav>
     </header>
 
-    <!-- CONTENIDO PRINCIPAL -->
+    <!-- MAIN CONTENT -->
     <main class="container noticias-main">
         <h2>Noticias del espacio</h2>
-        <p>Bienvenidos a la sección de noticias. Aca vas a encontrar las últimas novedades y descubrimientos en el fascinante campo de la astronomía. Mantente al día con los avances científicos, los eventos astronómicos destacados y las misiones espaciales más emocionantes. Nuestro objetivo es acercarte el universo y compartir las maravillas del cosmos. </p>
+        <p>Bienvenidos a la sección de noticias. Aca vas a encontrar las <b>últimas novedades y descubrimientos</b> en el fascinante campo de la astronomía. Mantenete al día con los avances científicos, los eventos astronómicos destacados y las misiones espaciales más emocionantes. </p>
         <hr>
+
         <!-- SECCIÓN DE NOTICIAS -->
-        <div class="noticias">
+        <section class="noticias-seccion">
+
             <!-- PRIMERA FILA DE NOTICIAS (MÁS RECIENTES) -->
-            <div class="div-news1">
+            <article class="noticias-seccion-fila1">
                 <div data-aos="fade-down" class="noticia">
                     <fieldset>
                         <img src="../img/new1.png" alt="Imagen de una supernova">
@@ -92,10 +95,11 @@
                         <a href="https://www.astronomy.com/science/how-the-james-webb-telescope-is-changing-astronomy/" target="_blank">Leer más</a>
                     </fieldset>
                 </div>
-            </div>
+            </article>
+
             <hr>
             <!-- SEGUNDA FILA DE NOTICIAS (MENOS RECIENTES) -->
-            <div class="div-news2">
+            <article class="noticias-seccion-fila2">
                 <div data-aos="fade-up" class="noticia">
                     <fieldset>
                         <img src="../img/new4.jpg" alt="Imagen de un exoplaneta">
@@ -120,12 +124,14 @@
                         <a href="https://astronomy.com/news/2023/04/einstein-rings-inch-us-closer-to-solving-dark-matter-debate" target="_blank">Leer más</a>
                     </fieldset>
                 </div>
-            </div>
-        </div>
+            </article>
+        </section>
+
         <hr>
         <!-- SITIOS DE NOTICIAS -->
-        <div class="lista-noticias">
-            <p>Si todavía querés saber más sobre la astronomía y sus últimas noticias, a continuación hay una lista de sitios confiables y populares para que sigas aprendiendo:</p>
+        <section class="lista-noticias">
+            <p>Si todavía querés aprender más sobre la astronomía y sus últimas noticias, aquí hay una <b>lista de sitios confiables</b> para que sigas leyendo:</p>
+            <br>
             <ul>
                 <li> <a href="https://www.nasa.gov/" target="_blank">NASA</a>: El sitio web oficial de la Administración Nacional de Aeronáutica y del Espacio (NASA) ofrece una amplia gama de noticias y descubrimientos astronómicos, así como imágenes y videos impresionantes.</li>
                 <li> <a href="https://www.esa.int/" target="_blank">ESA</a>: La Agencia Espacial Europea (ESA) proporciona noticias y actualizaciones sobre misiones espaciales, observatorios y proyectos relacionados con la astronomía.</li>
@@ -136,22 +142,33 @@
                 <li> <a href="https://phys.org/space-news/" target="_blank">Phys.org - Space</a>: Una sección dedicada a la astronomía y la exploración espacial en Phys.org, un sitio web que cubre una amplia gama de temas científicos.</li>
                 <li> <a href="https://theskylive.com/" target="_blank">The Sky Live</a>: Un sitio web interactivo que ofrece información en tiempo real sobre eventos astronómicos, como eclipses, conjunciones planetarias y lluvias de meteoros.</li>
             </ul>
+        </section>
+
+        <!-- PREVIOUS & NEXT PAGE BUTTON -->
+        <div class="previous-next-page">
+            <h5>
+                <a href="../pages/galeria.html"> ← Galería </a>
+            </h5>
+            <h5>
+                <a href="../pages/sobrenosotros.html"> Sobre Nosotros → </a>
+            </h5>
         </div>
     </main>
 
-    <!-- PIE DE PÁGINA -->
+    <!-- FOOTER -->
     <footer class="pie-pagina">
         <p>©Astronomía para todos</p>
         <h4>Todos los derechos reservados</h4>
+        <h6>Seguinos en:</h6>
         <div class="footer-icons">
             <a href="https://www.instagram.com/" target="_blank">
-                <img src="../img/instagram.png" alt="Ícono de Instagram">
+                <img src="../img/instagram.png" alt="Seguinos en Instagram">
             </a>
             <a href="https://es-la.facebook.com/" target="_blank">
-                <img src="../img/facebook.png" alt="Ícono de Facebook">
+                <img src="../img/facebook.png" alt="Seguinos en Facebook">
             </a>
             <a href="https://twitter.com/?lang=es" target="_blank">
-                <img src="../img/twitter.png" alt="Ícono de Twitter">
+                <img src="../img/twitter-alt.png" alt="Seguinos en X">
             </a>
         </div>
     </footer>

@@ -45,22 +45,4 @@
             
         }
     }
-    
-    /* -- BOTÓN NEXT PAGE -- */
-    .next-page{
-        position: relative;
-        left: 70em;
-        width: fit-content;
-        margin: 4px;
-        padding: 4px;
-        h5{
-            a{
-                color: white;
-            }
-            a:hover{
-                text-decoration: underline $color-secundario;
-                color: $color-secundario;
-            }
-        }
-    }
 }

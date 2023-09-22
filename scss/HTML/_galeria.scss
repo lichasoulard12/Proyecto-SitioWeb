@@ -1,7 +1,6 @@
 /* -- MAIN (GALERÍA) -- */
-.galeria-p{
-    margin-bottom: 0.5rem;
-}
+
+/* -- IMG Y SUS DESCRIPCIONES -- */
 .carousel-inner{
     overflow: visible;
     .carousel-item{
@@ -12,9 +11,7 @@
     }
 }
 
-.carrusel-p{
-    margin-top: 0.5rem;
-}
+/* -- SECCIÓN 2 -- */
 .galeria-img{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
