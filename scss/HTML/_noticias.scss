@@ -11,10 +11,14 @@
             border-radius: 10px;
         }
         a{
-            color: white;
+            transition: .3s;
+            text-decoration: none;
         }
         a:hover{
             font-style: italic;
+            text-decoration: underline;
+            font-size: 17px;
+            transition: .3s;
         }
         
         /* -- FILAS DE LAS NOTICIAS -- */
@@ -23,18 +27,24 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: auto;
             justify-items: center;
-            fieldset{
-                color: $color-secundario;
-                border-radius: 10px;
-                border: 2px solid $color-secundario;
-                padding: 0.5rem;
-            }
+            
             .noticia{
                 width: 300px;
                 margin: 20px;
+                fieldset{
+                    color: $color-secundario;
+                    border-radius: 10px;
+                    border: 2px solid $color-secundario;
+                    padding: 0.5rem;
+                }
+                h6{
+                    color: white;
+                }
             }
         }
     }
+
+    /* -- NEWS WEBS LIST -- */
     .lista-noticias{
         ul{
             background-color: rgba(0, 0, 0, 0.650);

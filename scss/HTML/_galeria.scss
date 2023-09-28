@@ -8,6 +8,12 @@
             @extend %box-shadow;
             border-radius: 20px;
         }
+        h5{
+            color: #f7ff00;
+            background-color: rgba(0, 0, 0, 0.75);
+            display: inline-block;
+            width: 50%;
+        }
     }
 }
 

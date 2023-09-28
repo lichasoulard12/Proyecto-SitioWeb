@@ -19,8 +19,10 @@
 
 /* -- BODY -- */
 body{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
     font-family: 'Montserrat Alternates', sans-serif;
-    background-image: url(../img/fondo.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(../img/fondo.jpg);
     background-repeat: repeat;
     background-size: auto;
     .no-padding{
@@ -39,6 +41,7 @@ header{
         border-bottom-right-radius: 20px;
         display: flex;
         align-items: center;
+        /* -- LOGO -- */
         a img{
             @include wyh (95px, 95px);
             margin: 0.5rem;
@@ -60,11 +63,28 @@ header{
             background-color: $color-secundario;
         }
         .nav-link:hover{
-            text-decoration: underline $color-secundario;
             color: $color-secundario;
         }
         .nav-link:active{
             color: $color-secundario;
+        }
+        
+        .nav-item{
+            margin: 0 16px;
+            position: relative;
+        }
+        .nav-item::after{
+            content: '';
+            height: 2px;
+            width: 0;
+            position: absolute;
+            background: #009688;
+            left: 0;
+            bottom: 8px;
+            transition: .5s;
+        }
+        .nav-item:hover::after{
+            width: 100%;
         }
     }
 }
@@ -94,7 +114,7 @@ main{
         color: white;
     }
     b{
-        color: rgb(117, 211, 215);
+        color: #3eedff;
     }
     
     /* -- PREVIOUS & NEXT PAGE BUTTON -- */
