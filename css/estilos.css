@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box; }
 
-.index-main .intro-img img, .index-main .index-seccion-dos .seccion-dos-1 .seccion2-1-img img, .index-main .index-seccion-dos .seccion-dos-2 .seccion2-2-img img, .universo-main .universo-seccion-dos a img, .carousel-inner .carousel-item img, .galeria-img div img {
+.index-main .intro-img img, .index-main .index-seccion-dos .seccion-dos-1 .seccion2-1-img img, .index-main .index-seccion-dos .seccion-dos-2 .seccion2-2-img img, .universo-main .universo-seccion-dos a img, .galeria-main .carousel-inner .carousel-item img, .galeria-main .galeria-img div img {
   box-shadow: 2px 2px 15px 0 #c5e2e7; }
 
 .index-main .intro-img, .universo-main .universo-intro-img {
@@ -30,29 +30,30 @@ main p {
 
 /* -- MEDIA QUERIES CELULAR -- */
 @media screen and (min-width: 300px) and (max-width: 767px) {
-  /* GENERAL */
+  /* --- GENERAL --- */
   h1, h2 {
     text-align: center; }
   p {
     text-align: justify; }
-  /* MAIN - INDEX */
+  /* --- INDEX --- */
   .index-main {
-    /* SECCIÓN 2 Y 3 - INDEX */ }
+    /* --- SECCIÓN 2 Y 3 --- */ }
     .index-main .intro-img img {
       width: 80%;
       height: auto; }
-    .index-main .introduccion, .index-main .introduccion-dos {
+    .index-main .index-seccion-uno, .index-main .index-seccion-dos {
       display: flex;
       flex-flow: column wrap;
       justify-content: none;
       align-items: center; }
-      .index-main .introduccion h3, .index-main .introduccion-dos h3 {
+      .index-main .index-seccion-uno h3, .index-main .index-seccion-dos h3 {
         text-align: center; }
-      .index-main .introduccion .div-uno .p1, .index-main .introduccion .div-uno .div-uno-imagen, .index-main .introduccion .div-uno a, .index-main .introduccion .div-dos .p1, .index-main .introduccion .div-dos .div-uno-imagen, .index-main .introduccion .div-dos a, .index-main .introduccion-dos .div-uno .p1, .index-main .introduccion-dos .div-uno .div-uno-imagen, .index-main .introduccion-dos .div-uno a, .index-main .introduccion-dos .div-dos .p1, .index-main .introduccion-dos .div-dos .div-uno-imagen, .index-main .introduccion-dos .div-dos a {
-        display: none; }
-    .index-main .introduccion-dos .div-dos p {
-      margin-left: 0; }
-  /* MAIN - EL UNIVERSO*/
+    .index-main .seccion2-1-img p {
+      display: inline-block; }
+    .index-main .seccion2-1-img img {
+      width: 80%;
+      height: auto; }
+  /* --- MAIN - EL UNIVERSO --- */
   .universo-main h3, .universo-main h4 {
     text-align: center; }
   .universo-main .div-universo a {
@@ -72,7 +73,7 @@ main p {
       .universo-main .seccion-dos-universo a img {
         width: 80% !important;
         height: auto !important; }
-  /* MAIN - GALERÍA */
+  /* --- MAIN - GALERÍA --- */
   .galeria-main .carousel .carousel-item img {
     width: 270px;
     height: auto; }
@@ -89,7 +90,7 @@ main p {
       .galeria-main .galeria-img div img {
         width: 70%;
         height: auto; }
-  /* MAIN - NOTICIAS */
+  /* --- MAIN - NOTICIAS --- */
   .noticias .div-news1, .noticias .div-news2 {
     grid: none !important;
     display: flex;
@@ -112,12 +113,12 @@ main p {
         align-items: center;
         width: 90%;
         height: auto; }
-  /* MAIN - SOBRE NOSOTROS */
+  /* --- MAIN - SOBRE NOSOTROS --- */
   .sobrenosotros-main .formulario {
     overflow: hidden; }
     .sobrenosotros-main .formulario textarea {
       width: 100%; }
-  /* FOOTER - GENERAL */
+  /* --- FOOTER --- */
   .pie-pagina {
     width: auto; }
     .pie-pagina .footer-icons {
@@ -128,9 +129,9 @@ main p {
       margin: 0;
       padding: 0; } }
 
-/* MEDIA QUERIES TABLET */
+/* --- MEDIA QUERIES TABLET --- */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* MENU NAV */
+  /* --- NAV MENU --- */
   .navbar .navbar-collapse {
     display: flex !important;
     justify-content: flex-start; }
@@ -140,7 +141,7 @@ main p {
     margin-left: 1rem; }
   .navbar .navbar-toggler {
     display: none; }
-  /* INDEX */
+  /* --- INDEX --- */
   .index-main .introduccion-dos .div-uno {
     display: flex;
     flex-flow: column wrap;
@@ -155,11 +156,11 @@ main p {
     align-items: center; }
     .index-main .introduccion-dos .div-dos a {
       margin-bottom: 0.6rem; }
-  /* EL UNIVERSO */
+  /* --- EL UNIVERSO --- */
   .universo-main .div-universo a img {
     width: 40vh;
     height: auto; }
-  /* GALERÍA */
+  /* --- GALERÍA --- */
   .galeria-main .carousel {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem; }
@@ -180,7 +181,7 @@ main p {
         width: 55%;
         height: auto;
         margin-top: 0.5rem; }
-  /* NOTICIAS */
+  /* --- NOTICIAS --- */
   .noticias {
     overflow: hidden; }
     .noticias .div-news1 .noticia, .noticias .div-news2 .noticia {
@@ -222,7 +223,9 @@ main p {
 /* -- MAIN (EL UNIVERSO) -- */
 .universo-main {
   /* -- IMG DE UNIVERSO -- */
-  /* -- PARRAFO INFERIOR IMG UNIVERSO -- */ }
+  /* -- PARRAFO INFERIOR IMG UNIVERSO -- */
+  /* -- SECCION 1 -- */
+  /* -- SECCION 2 - ORIGEN DEL UNIVERSO -- */ }
   .universo-main .universo-intro-img img {
     width: 750px;
     height: auto; }
@@ -234,6 +237,8 @@ main p {
     .universo-main .click-img a:hover {
       text-decoration: dashed;
       color: #c5e2e7; }
+  .universo-main .universo-seccion-uno article h4 {
+    text-decoration: underline; }
   .universo-main .universo-seccion-dos a {
     display: flex;
     justify-content: center; }
@@ -243,34 +248,41 @@ main p {
       border-radius: 30px; }
 
 /* -- MAIN (GALERÍA) -- */
-/* -- IMG Y SUS DESCRIPCIONES -- */
-.carousel-inner {
-  overflow: visible; }
-  .carousel-inner .carousel-item img {
-    border-radius: 20px; }
-  .carousel-inner .carousel-item h5 {
-    color: #f7ff00;
-    background-color: rgba(0, 0, 0, 0.75);
-    display: inline-block;
-    width: 50%; }
-
-/* -- SECCIÓN 2 -- */
-.galeria-img {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 50%);
-  justify-content: space-evenly;
-  margin: 0.5rem;
-  gap: 0.3rem; }
-  .galeria-img div {
-    width: auto;
-    height: 100%; }
-    .galeria-img div img {
-      width: 400px;
-      height: auto;
-      padding: 0;
-      margin-bottom: 0.7rem;
-      border-radius: 25px; }
+.galeria-main {
+  /* -- IMG Y SUS DESCRIPCIONES -- */
+  /* -- SECCIÓN 2 -- */
+  /* -- SECCIÓN LISTA DE SITIOS WEBS -- */ }
+  .galeria-main .carousel-inner {
+    overflow: visible; }
+    .galeria-main .carousel-inner .carousel-item img {
+      border-radius: 20px; }
+    .galeria-main .carousel-inner .carousel-item h5 {
+      color: #f7ff00;
+      background-color: rgba(0, 0, 0, 0.75);
+      display: inline-block;
+      width: 50%; }
+  .galeria-main .galeria-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    justify-content: space-evenly;
+    margin: 0.5rem;
+    gap: 0.3rem; }
+    .galeria-main .galeria-img div {
+      width: auto;
+      height: 100%; }
+      .galeria-main .galeria-img div img {
+        width: 400px;
+        height: auto;
+        padding: 0;
+        margin-bottom: 0.7rem;
+        border-radius: 25px; }
+  .galeria-main .galeria-seccion-list ul li {
+    color: white; }
+    .galeria-main .galeria-seccion-list ul li a:hover {
+      font-style: italic;
+      text-decoration: underline #c5e2e7;
+      color: #c5e2e7; }
 
 /* -- MAIN (NOTICIAS) -- */
 .noticias-main {
@@ -307,14 +319,12 @@ main p {
           padding: 0.5rem; }
         .noticias-main .noticias-seccion .noticias-seccion-fila1 .noticia h6, .noticias-main .noticias-seccion .noticias-seccion-fila2 .noticia h6 {
           color: white; }
-  .noticias-main .lista-noticias ul {
-    background-color: rgba(0, 0, 0, 0.65); }
-    .noticias-main .lista-noticias ul li {
-      color: white; }
-      .noticias-main .lista-noticias ul li a:hover {
-        font-style: italic;
-        text-decoration: underline #c5e2e7;
-        color: #c5e2e7; }
+  .noticias-main .lista-noticias ul li {
+    color: white; }
+    .noticias-main .lista-noticias ul li a:hover {
+      font-style: italic;
+      text-decoration: underline #c5e2e7;
+      color: #c5e2e7; }
 
 /* -- MAIN (SOBRENOSOTROS) -- */
 .sobrenosotros-main {

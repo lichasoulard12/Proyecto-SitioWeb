@@ -1,6 +1,8 @@
+
 /* -- MEDIA QUERIES CELULAR -- */
 @media screen and (min-width:300px) and (max-width:767px){
-    /* GENERAL */
+
+    /* --- GENERAL --- */
     h1, h2{
         text-align: center;
     }
@@ -8,35 +10,35 @@
         text-align: justify;
     }
 
-    /* MAIN - INDEX */
+    /* --- INDEX --- */
     .index-main{
+
         .intro-img{
             img{
                 @include wyh (80%, auto);
             }
         }
-        /* SECCIÓN 2 Y 3 - INDEX */
-        .introduccion, .introduccion-dos{
+
+        /* --- SECCIÓN 2 Y 3 --- */
+        .index-seccion-uno, .index-seccion-dos{
             @include flex (column, wrap, none, center);
             h3{
                 text-align: center;
             }
-            .div-uno, .div-dos{
-                .p1, .div-uno-imagen, a{
-                    display: none;
-                }
+        }
+
+        .seccion2-1-img{
+            p{
+                display: inline-block;
+            }
+            img{
+                @include wyh (80%, auto);
             }
         }
-        .introduccion-dos{
-            .div-dos{
-                p{
-                    margin-left: 0;
-                }
-            }
-        }
+        
     }
     
-    /* MAIN - EL UNIVERSO*/
+    /* --- MAIN - EL UNIVERSO --- */
     .universo-main{
         h3, h4{
             text-align: center
@@ -62,7 +64,7 @@
         }
     }
 
-    /* MAIN - GALERÍA */
+    /* --- MAIN - GALERÍA --- */
     .galeria-main{
         .carousel{
             .carousel-item{
@@ -83,7 +85,7 @@
         }
     }
 
-    /* MAIN - NOTICIAS */
+    /* --- MAIN - NOTICIAS --- */
     .noticias{
         .div-news1, .div-news2{
             grid: none !important;
@@ -101,7 +103,7 @@
         }
     }
 
-    /* MAIN - SOBRE NOSOTROS */
+    /* --- MAIN - SOBRE NOSOTROS --- */
     .sobrenosotros-main{
         .formulario{
             overflow: hidden;
@@ -111,7 +113,7 @@
         }
     }
 
-    /* FOOTER - GENERAL */
+    /* --- FOOTER --- */
     .pie-pagina{
         width: auto;
         .footer-icons{
@@ -122,10 +124,11 @@
     }
 }
 
-/* MEDIA QUERIES TABLET */
+
+/* --- MEDIA QUERIES TABLET --- */
 @media screen and (min-width:768px) and (max-width:1023px){
 
-    /* MENU NAV */
+    /* --- NAV MENU --- */
     .navbar{
         .navbar-collapse{
             display: flex !important;
@@ -142,7 +145,7 @@
         }
     }
 
-    /* INDEX */
+    /* --- INDEX --- */
     .index-main{
         .introduccion-dos{
             .div-uno{
@@ -162,7 +165,7 @@
         }
     }
 
-    /* EL UNIVERSO */
+    /* --- EL UNIVERSO --- */
     .universo-main{
         .div-universo{
             a{
@@ -173,7 +176,7 @@
         }
     }
 
-    /* GALERÍA */
+    /* --- GALERÍA --- */
     .galeria-main{
         .carousel{
             margin-top: 0.5rem;
@@ -196,7 +199,7 @@
         }
     }
 
-    /* NOTICIAS */
+    /* --- NOTICIAS --- */
     .noticias{
         overflow: hidden;
         .div-news1, .div-news2{
@@ -210,6 +213,4 @@
     }
 }
 
-@media screen and (min-width: 1024px){
-    
-}
+// @media screen and (min-width: 1024px){}

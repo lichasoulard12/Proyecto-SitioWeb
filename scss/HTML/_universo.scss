@@ -20,7 +20,17 @@
             color: $color-secundario;
         }
     }
-    
+
+    /* -- SECCION 1 -- */
+    .universo-seccion-uno{
+        article{
+            h4{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    /* -- SECCION 2 - ORIGEN DEL UNIVERSO -- */
     .universo-seccion-dos{
         a{
             display: flex;

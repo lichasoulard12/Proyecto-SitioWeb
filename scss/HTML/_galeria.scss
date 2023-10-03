@@ -1,38 +1,56 @@
 /* -- MAIN (GALERÍA) -- */
 
-/* -- IMG Y SUS DESCRIPCIONES -- */
-.carousel-inner{
-    overflow: visible;
-    .carousel-item{
-        img{
-            @extend %box-shadow;
-            border-radius: 20px;
+.galeria-main{
+
+    /* -- IMG Y SUS DESCRIPCIONES -- */
+    .carousel-inner{
+        overflow: visible;
+        .carousel-item{
+            img{
+                @extend %box-shadow;
+                border-radius: 20px;
+            }
+            h5{
+                color: #f7ff00;
+                background-color: rgba(0, 0, 0, 0.75);
+                display: inline-block;
+                width: 50%;
+            }
         }
-        h5{
-            color: #f7ff00;
-            background-color: rgba(0, 0, 0, 0.75);
-            display: inline-block;
-            width: 50%;
+    }
+    
+    /* -- SECCIÓN 2 -- */
+    .galeria-img{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 50%);
+        justify-content: space-evenly;
+        margin: 0.5rem;
+        gap: 0.3rem;
+        div{
+            @include wyh (auto, 100%);
+            img{
+                @include wyh (400px, auto);
+                @extend %box-shadow;
+                padding: 0;
+                margin-bottom: 0.7rem;
+                border-radius: 25px;
+            }
+        }
+    }
+
+    /* -- SECCIÓN LISTA DE SITIOS WEBS -- */
+    .galeria-seccion-list{
+        ul{
+            li{
+                color: white;
+                a:hover{
+                    font-style: italic;
+                    text-decoration: underline $color-secundario;
+                    color: $color-secundario
+                }
+            }
         }
     }
 }
 
-/* -- SECCIÓN 2 -- */
-.galeria-img{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 50%);
-    justify-content: space-evenly;
-    margin: 0.5rem;
-    gap: 0.3rem;
-    div{
-        @include wyh (auto, 100%);
-        img{
-            @include wyh (400px, auto);
-            @extend %box-shadow;
-            padding: 0;
-            margin-bottom: 0.7rem;
-            border-radius: 25px;
-        }
-    }
-}
