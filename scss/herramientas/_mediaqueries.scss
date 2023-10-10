@@ -1,109 +1,96 @@
 
-/* -- MEDIA QUERIES CELULAR -- */
-@media screen and (min-width:300px) and (max-width:767px){
+/* --- MEDIA QUERIES CELULAR --- */
+@media only screen and (min-width:300px) and (max-width:767px){
 
     /* --- GENERAL --- */
-    h1, h2{
+    h1, h2, h3, h4{
         text-align: center;
     }
     p{
         text-align: justify;
     }
+    nav, .header-div{
+        border-radius: 0;
+    } 
 
     /* --- INDEX --- */
     .index-main{
-
         .intro-img{
             img{
                 @include wyh (80%, auto);
             }
         }
-
-        /* --- SECCIÓN 2 Y 3 --- */
-        .index-seccion-uno, .index-seccion-dos{
-            @include flex (column, wrap, none, center);
-            h3{
-                text-align: center;
+        /* -- SECCIÓN 2 -- */
+        .index-seccion-dos{
+            .seccion2-1-img, .seccion2-2-img{
+                img{
+                    @include wyh (95%, auto);
+                }
             }
-        }
-
-        .seccion2-1-img{
-            p{
-                display: inline-block;
-            }
+        }    
+    }
+    
+    /* --- EL UNIVERSO --- */
+    .universo-main{
+        .universo-intro-img{
+            text-align: center;
             img{
                 @include wyh (80%, auto);
             }
         }
-        
-    }
-    
-    /* --- MAIN - EL UNIVERSO --- */
-    .universo-main{
-        h3, h4{
-            text-align: center
+        /* -- SECCIÓN 2 -- */
+        .universo-seccion-dos{
+            @include flex (column, wrap, none, center);
+            img{
+                @include wyh (90%, auto);
+            }
         }
-        .div-universo{
-            a{
-                display: flex;
-                justify-content: center;
+    }
+
+    /* --- GALERÍA --- */
+    .galeria-main{
+        /* -- CAROUSEL -- */
+        .carousel{
+            .carousel-item{
                 img{
                     @include wyh (80%, auto);
                 }
             }
         }
-        .seccion-dos-universo{
-            @include flex (column, wrap, none, center);
-            a{
-                @include wyh (90%, auto);
-                img{
-                    width: 80% !important;
-                    height: auto !important;
-                }
-            }
-        }
-    }
-
-    /* --- MAIN - GALERÍA --- */
-    .galeria-main{
-        .carousel{
-            .carousel-item{
-                img{
-                    @include wyh (270px, auto);
-                }
-            }
-        }
+        /* -- SECCIÓN 2 -- */
         .galeria-img{
-            @include flex (column, wrap, center, center);
             div{
                 @include flex (column, wrap, center, center);
                 img{
-                    @include wyh (70%, auto);
+                    @include wyh (85%, auto);
+                    margin: .4rem 0 .4rem 0;
                 }
             }
             
         }
     }
 
-    /* --- MAIN - NOTICIAS --- */
-    .noticias{
-        .div-news1, .div-news2{
-            grid: none !important;
-            @include flex (column, wrap, center, center);
-            overflow: hidden;
-            .noticia{
-                @include wyh (100%, auto);
+    /* --- NOTICIAS --- */
+    .noticias-main{
+        .noticias-seccion{
+            .noticias-seccion-fila1, .noticias-seccion-fila2{
                 @include flex (column, wrap, center, center);
-                fieldset{
+                overflow: hidden;
+                .noticia{
+                    @include wyh (85%, auto);
                     @include flex (column, wrap, center, center);
-                    @include wyh (90%, auto);
+                    margin: .5rem;
+                    fieldset{
+                        @include flex (column, wrap, center, center);
+                        @include wyh (95%, auto);
+                    }
                 }
-                margin-bottom: 1rem;
             }
         }
     }
+    
 
-    /* --- MAIN - SOBRE NOSOTROS --- */
+    /* --- SOBRE NOSOTROS --- */
     .sobrenosotros-main{
         .formulario{
             overflow: hidden;
@@ -117,7 +104,7 @@
     .pie-pagina{
         width: auto;
         .footer-icons{
-            @include flex (column, wrap, center, center);
+            @include flex (row, wrap, center, center);
             margin: 0;
             padding: 0;
         }
@@ -213,4 +200,80 @@
     }
 }
 
-// @media screen and (min-width: 1024px){}
+
+/* --- MEDIA QUERIES DESKTOP --- */
+@media screen and (min-width: 1024px){
+    
+    /* --- HEADER --- */
+    .header-div{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    nav{
+        border-radius: 100px;
+    }
+
+    /* -- INDEX -- */
+    .index-main{
+        /* -- DIVS -- */ 
+        .seccion2-1-img{
+            display: flex;
+            img{
+                @include wyh (auto, 300px);
+            }
+        }
+        .seccion2-2-img{
+            display: flex;
+            img{
+                @include wyh (450px, auto);
+            }
+        }
+    }
+
+    /* --- UNIVERSO --- */
+    .universo-main{
+        .universo-intro-img{
+            img{
+                @include wyh (750px, auto);
+            }
+        }
+        .universo-seccion-dos{
+            img{
+                @include wyh (auto, 300px);
+            }
+        }
+    }
+
+    /* --- GALERÍA --- */
+    .galeria-main{
+        .galeria-img{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 50%);
+            justify-content: space-evenly;
+            margin: 0.5rem;
+            gap: 0.3rem;
+            div{
+                img{
+                    @include wyh (400px, auto);
+                    padding: 0;
+                    margin-bottom: 0.7rem;
+                }
+            }
+        }
+    }
+
+    /* --- NOTICIAS --- */
+    .noticias-main{
+        .noticias-seccion-fila1, .noticias-seccion-fila2{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            justify-items: center;
+            .noticia{
+                margin: 20px;
+                width: 300px;
+            }
+        }
+    }
+}

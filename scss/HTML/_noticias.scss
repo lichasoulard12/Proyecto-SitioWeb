@@ -23,14 +23,7 @@
         
         /* -- FILAS DE LAS NOTICIAS -- */
         .noticias-seccion-fila1, .noticias-seccion-fila2{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: auto;
-            justify-items: center;
-            
             .noticia{
-                width: 300px;
-                margin: 20px;
                 fieldset{
                     color: $color-secundario;
                     border-radius: 10px;

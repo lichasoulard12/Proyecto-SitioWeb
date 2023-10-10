@@ -16,14 +16,12 @@
     /* -- SECCIÓN 2 -- */
     .index-seccion-dos{
         margin: 1rem;
+
         /* -- SECCIÓN 2.1 -- */ 
         .seccion-dos-1{
-
             /* -- DIVS -- */ 
             .seccion2-1-img{
-                display: flex;
                 img{
-                    @include wyh (auto, 300px);
                     @extend %box-shadow;
                     border-radius: 30px;
                     margin-left: 0.5rem;
@@ -34,9 +32,7 @@
         /* -- SECCION 2.2 -- */
         .seccion-dos-2{
             .seccion2-2-img{
-                display: flex;
                 img{
-                    @include wyh (450px, auto);
                     @extend %box-shadow;
                     border-radius: 30px;
                     margin-right: 0.5rem;
