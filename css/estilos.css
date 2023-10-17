@@ -29,7 +29,7 @@ main p {
   margin-bottom: 0; }
 
 /* --- MEDIA QUERIES CELULAR --- */
-@media only screen and (min-width: 300px) and (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 500px) {
   /* --- GENERAL --- */
   h1, h2, h3, h4 {
     text-align: center; }
@@ -117,10 +117,10 @@ main p {
       padding: 0; } }
 
 /* --- MEDIA QUERIES TABLET --- */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 750px) and (max-width: 1023px) {
   /* --- NAV MENU --- */
   .navbar .navbar-collapse {
-    display: flex !important;
+    display: flex;
     justify-content: flex-start; }
   .navbar .navbar-nav {
     flex-direction: row; }
@@ -129,52 +129,59 @@ main p {
   .navbar .navbar-toggler {
     display: none; }
   /* --- INDEX --- */
-  .index-main .introduccion-dos .div-uno {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: none;
-    align-items: center; }
-    .index-main .introduccion-dos .div-uno div .p1 {
-      margin-bottom: 0.5rem; }
-  .index-main .introduccion-dos .div-dos {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: none;
-    align-items: center; }
-    .index-main .introduccion-dos .div-dos a {
-      margin-bottom: 0.6rem; }
+  .index-main {
+    /* -- SECCIÓN 2 -- */ }
+    .index-main .seccion2-1-img, .index-main .seccion2-2-img {
+      display: flex;
+      flex-direction: column; }
+      .index-main .seccion2-1-img img, .index-main .seccion2-2-img img {
+        width: 95%;
+        height: auto; }
   /* --- EL UNIVERSO --- */
-  .universo-main .div-universo a img {
-    width: 40vh;
-    height: auto; }
-  /* --- GALERÍA --- */
-  .galeria-main .carousel {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem; }
-    .galeria-main .carousel .carousel-item img {
-      width: 500px;
+  .universo-main {
+    /* -- IMAGENES -- */ }
+    .universo-main .universo-intro-img img, .universo-main .universo-seccion-dos img {
+      width: 55vh;
       height: auto; }
-  .galeria-main .galeria-img {
+  /* --- GALERÍA --- */
+  .galeria-main .carousel .carousel-item img {
+    width: 510px;
+    height: 450px; }
+  .galeria-main .galeria-img div {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center; }
-    .galeria-main .galeria-img div {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
-      align-items: center; }
-      .galeria-main .galeria-img div img {
-        width: 55%;
-        height: auto;
-        margin-top: 0.5rem; }
+    .galeria-main .galeria-img div img {
+      width: 55%;
+      height: auto;
+      margin-top: 1rem; }
+    .galeria-main .galeria-img div p {
+      margin-top: 1rem; }
   /* --- NOTICIAS --- */
-  .noticias {
-    overflow: hidden; }
-    .noticias .div-news1 .noticia, .noticias .div-news2 .noticia {
-      justify-content: space-evenly; }
-      .noticias .div-news1 .noticia p, .noticias .div-news2 .noticia p {
-        display: none; } }
+  .noticias-main .noticias-seccion .noticias-seccion-fila1, .noticias-main .noticias-seccion .noticias-seccion-fila2 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
+    .noticias-main .noticias-seccion .noticias-seccion-fila1 .noticia, .noticias-main .noticias-seccion .noticias-seccion-fila2 .noticia {
+      width: 650px;
+      height: auto;
+      margin: 1rem; }
+      .noticias-main .noticias-seccion .noticias-seccion-fila1 .noticia fieldset, .noticias-main .noticias-seccion .noticias-seccion-fila2 .noticia fieldset {
+        display: grid;
+        grid-template-areas: "img h3 h3" "img h3 h3" "img h6 a"; }
+        .noticias-main .noticias-seccion .noticias-seccion-fila1 .noticia fieldset img, .noticias-main .noticias-seccion .noticias-seccion-fila2 .noticia fieldset img {
+          grid-area: img;
+          width: 95%;
+          height: 100%; }
+        .noticias-main .noticias-seccion .noticias-seccion-fila1 .noticia fieldset h3, .noticias-main .noticias-seccion .noticias-seccion-fila2 .noticia fieldset h3 {
+          grid-area: h3;
+          margin-left: 5px; }
+        .noticias-main .noticias-seccion .noticias-seccion-fila1 .noticia fieldset h6, .noticias-main .noticias-seccion .noticias-seccion-fila2 .noticia fieldset h6 {
+          grid-area: h6; }
+        .noticias-main .noticias-seccion .noticias-seccion-fila1 .noticia fieldset a, .noticias-main .noticias-seccion .noticias-seccion-fila2 .noticia fieldset a {
+          grid-area: a; } }
 
 /* --- MEDIA QUERIES DESKTOP --- */
 @media screen and (min-width: 1024px) {

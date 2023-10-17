@@ -1,6 +1,6 @@
 
 /* --- MEDIA QUERIES CELULAR --- */
-@media only screen and (min-width:300px) and (max-width:767px){
+@media only screen and (min-width:300px) and (max-width:500px){
 
     /* --- GENERAL --- */
     h1, h2, h3, h4{
@@ -113,12 +113,12 @@
 
 
 /* --- MEDIA QUERIES TABLET --- */
-@media screen and (min-width:768px) and (max-width:1023px){
+@media only screen and (min-width:750px) and (max-width:1023px){
 
     /* --- NAV MENU --- */
     .navbar{
         .navbar-collapse{
-            display: flex !important;
+            display: flex;
             justify-content: flex-start;
         }
         .navbar-nav {
@@ -134,31 +134,22 @@
 
     /* --- INDEX --- */
     .index-main{
-        .introduccion-dos{
-            .div-uno{
-                @include flex (column, wrap , none, center);
-                div{
-                    .p1{
-                        margin-bottom: 0.5rem;
-                    }
-                }
+        /* -- SECCIÓN 2 -- */
+        .seccion2-1-img, .seccion2-2-img{
+            display: flex;
+            flex-direction: column;
+            img{
+                @include wyh (95%, auto);
             }
-            .div-dos{
-                @include flex (column, wrap , none, center);
-                a{
-                    margin-bottom: 0.6rem;
-                }
-            }
-        }
+        }  
     }
 
     /* --- EL UNIVERSO --- */
     .universo-main{
-        .div-universo{
-            a{
-                img{
-                    @include wyh (40vh, auto)
-                }
+        /* -- IMAGENES -- */
+        .universo-intro-img, .universo-seccion-dos{
+            img{
+                @include wyh (55vh, auto)
             }
         }
     }
@@ -166,34 +157,56 @@
     /* --- GALERÍA --- */
     .galeria-main{
         .carousel{
-            margin-top: 0.5rem;
-            margin-bottom: 0.5rem;
             .carousel-item{
                 img{
-                    @include wyh (500px, auto);
+                    @include wyh (510px, 450px);
                 }
             }
         }
         .galeria-img{
-            @include flex (column, wrap , center, center);
             div{
-                @include flex (column, wrap , center, center);
+                @include flex (column, wrap, center, center);
                 img{
                     @include wyh (55%, auto);
-                    margin-top: 0.5rem;
+                    margin-top: 1rem;
+                }
+                p{
+                    margin-top: 1rem;
                 }
             }
         }
     }
 
     /* --- NOTICIAS --- */
-    .noticias{
-        overflow: hidden;
-        .div-news1, .div-news2{
-            .noticia{
-                justify-content: space-evenly;
-                p{
-                    display: none;
+    .noticias-main{
+        .noticias-seccion{
+            .noticias-seccion-fila1, .noticias-seccion-fila2{
+                @include flex (column, wrap, center, center);
+                .noticia{
+                    @include wyh (650px, auto);
+                    margin: 1rem;
+                    fieldset{
+                        display: grid;
+                        img{
+                            grid-area: img;
+                            @include wyh (95%, 100%);
+                        }
+                        h3{
+                            grid-area: h3;
+                            margin-left: 5px;
+                        }
+                        h6{
+                            grid-area: h6;
+                        }
+                        a{
+                            grid-area: a;
+                        }
+                        grid-template-areas: 
+                        "img h3 h3"
+                        "img h3 h3"
+                        "img h6 a"
+                        ;
+                    }
                 }
             }
         }  
