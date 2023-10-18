@@ -1,11 +1,10 @@
 /* --- EL UNIVERSO --- */
 .universo-main{
-
-    /* -- IMG DE UNIVERSO -- */
+    /* -- UNIVERSE IMG -- */
     .universo-intro-img{
         @extend %flex;
     }
-    /* -- PARRAFO INFERIOR IMG UNIVERSO -- */
+    /* -- IMG SUBTEXT -- */
     .click-img{
         width: auto;
         display: inline;
@@ -18,7 +17,7 @@
         }
     }
 
-    /* -- SECCION 1 -- */
+    /* -- SECTION 1 -- */
     .universo-seccion-uno{
         article{
             h4{
@@ -27,7 +26,7 @@
         }
     }
 
-    /* -- SECCION 2 - ORIGEN DEL UNIVERSO -- */
+    /* -- SECTION 2 - ORIGEN DEL UNIVERSO -- */
     .universo-seccion-dos{
         a{
             display: flex;

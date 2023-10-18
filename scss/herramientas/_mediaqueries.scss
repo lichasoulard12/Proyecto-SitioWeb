@@ -1,8 +1,8 @@
 
-/* --- MEDIA QUERIES CELULAR --- */
-@media only screen and (min-width:300px) and (max-width:500px){
+/* --- MEDIA QUERIES PHONE --- */
+@media only screen and (min-width:300px) and (max-width:550px){
 
-    /* --- GENERAL --- */
+    /* --- OVERALL --- */
     h1, h2, h3, h4{
         text-align: center;
     }
@@ -20,7 +20,7 @@
                 @include wyh (80%, auto);
             }
         }
-        /* -- SECCIÓN 2 -- */
+
         .index-seccion-dos{
             .seccion2-1-img, .seccion2-2-img{
                 img{
@@ -38,7 +38,7 @@
                 @include wyh (80%, auto);
             }
         }
-        /* -- SECCIÓN 2 -- */
+
         .universo-seccion-dos{
             @include flex (column, wrap, none, center);
             img{
@@ -49,7 +49,6 @@
 
     /* --- GALERÍA --- */
     .galeria-main{
-        /* -- CAROUSEL -- */
         .carousel{
             .carousel-item{
                 img{
@@ -57,7 +56,7 @@
                 }
             }
         }
-        /* -- SECCIÓN 2 -- */
+
         .galeria-img{
             div{
                 @include flex (column, wrap, center, center);
@@ -75,7 +74,6 @@
         .noticias-seccion{
             .noticias-seccion-fila1, .noticias-seccion-fila2{
                 @include flex (column, wrap, center, center);
-                overflow: hidden;
                 .noticia{
                     @include wyh (85%, auto);
                     @include flex (column, wrap, center, center);
@@ -105,8 +103,6 @@
         width: auto;
         .footer-icons{
             @include flex (row, wrap, center, center);
-            margin: 0;
-            padding: 0;
         }
     }
 }
@@ -134,7 +130,6 @@
 
     /* --- INDEX --- */
     .index-main{
-        /* -- SECCIÓN 2 -- */
         .seccion2-1-img, .seccion2-2-img{
             display: flex;
             flex-direction: column;
@@ -146,7 +141,7 @@
 
     /* --- EL UNIVERSO --- */
     .universo-main{
-        /* -- IMAGENES -- */
+        /* -- IMGs -- */
         .universo-intro-img, .universo-seccion-dos{
             img{
                 @include wyh (55vh, auto)
@@ -163,6 +158,7 @@
                 }
             }
         }
+
         .galeria-img{
             div{
                 @include flex (column, wrap, center, center);
@@ -179,38 +175,35 @@
 
     /* --- NOTICIAS --- */
     .noticias-main{
-        .noticias-seccion{
-            .noticias-seccion-fila1, .noticias-seccion-fila2{
-                @include flex (column, wrap, center, center);
-                .noticia{
-                    @include wyh (650px, auto);
-                    margin: 1rem;
-                    fieldset{
-                        display: grid;
-                        img{
-                            grid-area: img;
-                            @include wyh (95%, 100%);
-                        }
-                        h3{
-                            grid-area: h3;
-                            margin-left: 5px;
-                        }
-                        h6{
-                            grid-area: h6;
-                        }
-                        a{
-                            grid-area: a;
-                        }
-                        grid-template-areas: 
-                        "img h3 h3"
-                        "img h3 h3"
-                        "img h6 a"
-                        ;
+        .noticias-seccion-fila1, .noticias-seccion-fila2{
+            @include flex (column, wrap, center, center);
+            .noticia{
+                @include wyh (650px, auto);
+                margin: 1rem;
+                fieldset{
+                    display: grid;
+                    img{
+                        grid-area: img;
+                        @include wyh (95%, 100%);
                     }
+                    h3{
+                        grid-area: h3;
+                        margin-left: 5px;
+                    }
+                    h6{
+                        grid-area: h6;
+                    }
+                    a{
+                        grid-area: a;
+                    }
+                    grid-template-areas: 
+                    "img h3 h3"
+                    "img h3 h3"
+                    "img h6 a";
                 }
             }
-        }  
-    }
+        }
+    }  
 }
 
 
@@ -226,15 +219,15 @@
         border-radius: 100px;
     }
 
-    /* -- INDEX -- */
+    /* --- INDEX --- */
     .index-main{
-        /* -- DIVS -- */ 
         .seccion2-1-img{
             display: flex;
             img{
                 @include wyh (auto, 300px);
             }
         }
+
         .seccion2-2-img{
             display: flex;
             img{
@@ -250,6 +243,7 @@
                 @include wyh (750px, auto);
             }
         }
+        
         .universo-seccion-dos{
             img{
                 @include wyh (auto, 300px);

@@ -1,7 +1,6 @@
-/* -- MAIN (NOTICIAS) -- */
+/* --- NOTICIAS --- */
 .noticias-main{
-
-    /* -- SECCIÓN DE NOTICIAS -- */
+    /* -- NEWS SECTION -- */
     .noticias-seccion{
         h3{
             font-style: italic;
@@ -21,7 +20,7 @@
             transition: .3s;
         }
         
-        /* -- FILAS DE LAS NOTICIAS -- */
+        /* -- NEWS ROWS -- */
         .noticias-seccion-fila1, .noticias-seccion-fila2{
             .noticia{
                 fieldset{

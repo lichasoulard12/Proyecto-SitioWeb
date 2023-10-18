@@ -8,18 +8,18 @@
             border-radius: 50%;
         }
     }
-    /* -- SECCIÓN 1 -- */
+    
+    /* -- SECTION 1 -- */
     .index-seccion-uno{
         margin: 1rem;
     }
 
-    /* -- SECCIÓN 2 -- */
+    /* -- SECTION 2 -- */
     .index-seccion-dos{
         margin: 1rem;
 
-        /* -- SECCIÓN 2.1 -- */ 
+        /* -- SECTION 2.1 -- */ 
         .seccion-dos-1{
-            /* -- DIVS -- */ 
             .seccion2-1-img{
                 img{
                     @extend %box-shadow;
@@ -29,7 +29,7 @@
             }
         }
 
-        /* -- SECCION 2.2 -- */
+        /* -- SECTION 2.2 -- */
         .seccion-dos-2{
             .seccion2-2-img{
                 img{

@@ -1,8 +1,6 @@
-/* -- MAIN (GALERÍA) -- */
-
+/* --- GALERÍA --- */
 .galeria-main{
-
-    /* -- IMG Y SUS DESCRIPCIONES -- */
+    /* -- IMGs DESCRIPTIONS -- */
     .carousel-inner{
         overflow: visible;
         .carousel-item{
@@ -19,7 +17,7 @@
         }
     }
     
-    /* -- SECCIÓN 2 -- */
+    /* -- SECTION 2 -- */
     .galeria-img{
         div{
             @include wyh (auto, 100%);
@@ -30,16 +28,14 @@
         }
     }
 
-    /* -- SECCIÓN LISTA DE SITIOS WEBS -- */
+    /* -- WEBSITES LIST -- */
     .galeria-seccion-list{
-        ul{
-            li{
-                color: white;
-                a:hover{
-                    font-style: italic;
-                    text-decoration: underline $color-secundario;
-                    color: $color-secundario
-                }
+        li{
+            color: white;
+            a:hover{
+                font-style: italic;
+                text-decoration: underline $color-secundario;
+                color: $color-secundario
             }
         }
     }
